@@ -10,4 +10,12 @@ public class SpringHelloWord {
     public void setHelloMessage(String helloMessage) {
         this.helloMessage = helloMessage;
     }
+
+    public void initBean() {
+        System.out.println("INIT-" + this);
+    }
+
+    public void destrBean() {
+        System.out.println("DESTROY-" + this);
+    }
 }

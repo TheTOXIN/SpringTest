@@ -4,7 +4,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="springHelloWorld" class="com.toxin.spring.SpringHelloWord">
-        <property name="helloMessage" value="Hello World!"/>
+    <bean id="springHelloWorld" class="com.toxin.spring.SpringHelloWord" init-method="initBean" destroy-method="destrBean" scope="prototype">
+        <property name="helloMessage" value="Hello World from app-context!"/>
+    </bean>
+
+    <bean id="messageFromBean" class="com.toxin.spring.Message" lazy-init="true" scope="singleton">
+        <property name="message" value="Hello World from bean factory!"/>
     </bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.toxin.spring;
+package com.toxin.spring.ex1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

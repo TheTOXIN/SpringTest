@@ -1,6 +1,8 @@
-package com.toxin.spring;
+package com.toxin.spring.ex1;
 
-public class SpringHelloWord {
+import org.springframework.beans.factory.DisposableBean;
+
+public class SpringHelloWord implements DisposableBean {
     private String helloMessage;
 
     public String getHelloMessage() {
@@ -15,7 +17,8 @@ public class SpringHelloWord {
         System.out.println("INIT-" + this);
     }
 
-    public void destrBean() {
+    @Override
+    public void destroy() throws Exception {
         System.out.println("DESTROY-" + this);
     }
 }

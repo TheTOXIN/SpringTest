@@ -1,4 +1,4 @@
-package com.toxin.spring;
+package com.toxin.spring.ex2;
 
 public class Message {
     private String message;

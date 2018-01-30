@@ -18,10 +18,12 @@
       <configuration>
         <fileset id="fileset" name="Spring Hello Bean" removed="false">
           <file>file://$MODULE_DIR$/resources/spring-hello-bean.xml</file>
+          <file>file://$MODULE_DIR$/resources/spring-config-ex5.xml</file>
         </fileset>
         <fileset id="fileset2" name="Spring Config Ex4" removed="false">
           <file>file://$MODULE_DIR$/resources/spring-config-ex4.xml</file>
           <file>file://$MODULE_DIR$/resources/spring-hello-bean.xml</file>
+          <file>file://$MODULE_DIR$/resources/spring-config-ex3.xml</file>
         </fileset>
       </configuration>
     </facet>
